@@ -1,4 +1,4 @@
 target_sources(AllTests
     PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/LedDriverTest.cpp)
-target_link_libraries(AllTests LedDriver)
+target_link_libraries(AllTests RuntimeErrorStub LedDriver)

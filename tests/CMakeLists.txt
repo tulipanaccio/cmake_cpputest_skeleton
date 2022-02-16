@@ -1,6 +1,6 @@
 add_executable(AllTests AllTests.cpp)
 include_directories(AllTests ${CMAKE_BINARY_DIR}/cpputest/include)
-include_directories(AllTests ${CMAKE_SOURCE_DIR}/include)
+include_directories(AllTests ${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/mocks)
 target_link_libraries(AllTests ${CPPUTEST_LIBRARY} ${CPPUTEST_EXT_LIBRARY})
 
 add_subdirectory(stdio)
